@@ -1,9 +1,9 @@
 package net.sf.dbdeploy;
 
+import net.sf.dbdeploy.scripts.ChangeScript;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import net.sf.dbdeploy.scripts.ChangeScript;
 
 public class PrettyPrinter {
 

@@ -1,11 +1,11 @@
 package net.sf.dbdeploy.scripts;
 
+import net.sf.dbdeploy.exceptions.UnrecognisedFilenameException;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import net.sf.dbdeploy.exceptions.UnrecognisedFilenameException;
 
 public class DirectoryScanner {
 	

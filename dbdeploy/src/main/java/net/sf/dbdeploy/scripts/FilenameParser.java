@@ -1,9 +1,9 @@
 package net.sf.dbdeploy.scripts;
 
+import net.sf.dbdeploy.exceptions.UnrecognisedFilenameException;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import net.sf.dbdeploy.exceptions.UnrecognisedFilenameException;
 
 public class FilenameParser {
 	private final Pattern pattern;
