@@ -23,13 +23,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Maven: commons-cli:commons-cli:1.1" level="project" />
-    <orderEntry type="library" exported="" name="Maven: ant:ant:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.4" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-all:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.easymock:easymock:2.3" level="project" />
     <orderEntry type="library" name="Maven: org.easymock:easymockclassextension:2.3" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.1_3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: commons-cli:commons-cli:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: ant:ant:1.6.5" level="project" />
   </component>
 </module>
 
