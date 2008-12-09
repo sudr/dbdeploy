@@ -19,6 +19,20 @@
         <developerConnection>scm:svn:https://dbdeploy.svn.sourceforge.net/svnroot/dbdeploy/branches/maven</developerConnection>
     </scm>
 
+    <licenses>
+        <license>
+            <name>LGPL</name>
+        </license>
+    </licenses>
+
+    <mailingLists>
+        <mailingList>
+            <name>users</name>
+            <post>db-deploy-users@googlegroups.com</post>
+            <archive>http://groups.google.com/group/db-deploy-users</archive>
+        </mailingList>
+    </mailingLists>
+
     <build>
         <pluginManagement>
             <plugins>
