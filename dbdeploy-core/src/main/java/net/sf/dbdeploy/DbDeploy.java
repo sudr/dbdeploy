@@ -7,9 +7,7 @@ import net.sf.dbdeploy.exceptions.UsageException;
 import net.sf.dbdeploy.scripts.ChangeScriptRepository;
 import net.sf.dbdeploy.scripts.DirectoryScanner;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
+import java.io.*;
 
 public class DbDeploy {
 	private String url;
@@ -64,6 +62,8 @@ public class DbDeploy {
 	}
 
 	public void go() throws Exception {
+        System.err.println(getWelcomeString());
+
 		validate();
 
 		Class.forName(driver);
@@ -162,4 +162,13 @@ public class DbDeploy {
 	public String getDriver() {
 		return driver;
 	}
+
+    public String getWelcomeString() {
+        InputStream stream = getClass().getClassLoader().getResourceAsStream("welcome.txt");
+        try {
+            return new BufferedReader(new InputStreamReader(stream)).readLine();
+        } catch (IOException e) {
+            return null;
+        }
+    }
 }

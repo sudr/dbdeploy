@@ -4,6 +4,7 @@ import net.sf.dbdeploy.exceptions.UsageException;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+import static org.hamcrest.Matchers.startsWith;
 
 import java.io.File;
 
@@ -70,4 +71,10 @@ public class DbDeployTest {
 			assertEquals("Script directory must point to a valid directory", e.getMessage());
 		}
 	}
+
+    @Test
+    public void shouldReportVersionNumberWithoutCrashing() {
+        assertThat(dbDeploy.getWelcomeString(), startsWith("dbdeploy"));
+        System.out.println(dbDeploy.getWelcomeString());
+    }
 }

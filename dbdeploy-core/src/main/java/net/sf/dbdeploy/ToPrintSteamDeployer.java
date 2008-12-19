@@ -26,9 +26,7 @@ public class ToPrintSteamDeployer {
 		this.undoOutputPrintStream = undoOutputPrintStream;
 	}
 
-	public void doDeploy(Integer lastChangeToApply) throws SQLException, DbDeployException, IOException {
-		System.out.println("dbdeploy v2.11");
-		
+	public void doDeploy(Integer lastChangeToApply) throws SQLException, DbDeployException, IOException {		
 		ConsolidatedChangeScriptWriter doScriptWriter = new ConsolidatedChangeScriptWriter(doOutputPrintStream, dbmsSyntax);
 		Controller doController = new Controller(schemaManager, changeScriptRepository, doScriptWriter);
 		doController.processDoChangeScripts(lastChangeToApply);
