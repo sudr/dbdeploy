@@ -12,11 +12,12 @@
         <module>dbdeploy-core</module>
         <module>dbdeploy-ant</module>
         <module>dbdeploy-cli</module>
+        <module>dbdeploy-dist</module>
     </modules>
 
     <scm>
-        <connection>scm:svn:http://dbdeploy.svn.sourceforge.net/svnroot/dbdeploy/branches/maven</connection>
-        <developerConnection>scm:svn:https://dbdeploy.svn.sourceforge.net/svnroot/dbdeploy/branches/maven</developerConnection>
+        <connection>scm:svn:http://dbdeploy.googlecode.com/svn/branches/maven</connection>
+        <developerConnection>scm:svn:https://dbdeploy.googlecode.com/svn/branches/maven</developerConnection>
     </scm>
 
     <licenses>

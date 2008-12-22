@@ -1,0 +1,16 @@
+<assembly>
+    <id>distribution</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <baseDirectory>dbdeploy-${project.version}</baseDirectory>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>false</useProjectArtifact>
+            <useTransitiveDependencies>false</useTransitiveDependencies>
+            <outputFileNameMapping>${artifact.artifactId}-${artifact.version}.${artifact.extension}</outputFileNameMapping>
+        </dependencySet>
+    </dependencySets>
+ </assembly>
