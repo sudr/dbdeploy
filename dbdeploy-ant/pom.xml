@@ -13,7 +13,7 @@
     <name>dbdeploy-ant</name>
     <description>ant plugin to invoke dbdeploy</description>
 
-      <build>
+    <build>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>

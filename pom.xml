@@ -11,6 +11,7 @@
     <modules>
         <module>dbdeploy-core</module>
         <module>dbdeploy-ant</module>
+        <module>dbdeploy-ant-integration-test</module>
         <module>dbdeploy-cli</module>
         <module>dbdeploy-dist</module>
     </modules>

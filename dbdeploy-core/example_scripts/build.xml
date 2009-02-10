@@ -48,7 +48,7 @@
 	<target name="create-changelog-table">
 		<sql driver="org.hsqldb.jdbcDriver" url="jdbc:hsqldb:file:${db.name}"
 		     userid="sa" password="">
-			<fileset file="../scripts/createSchemaVersionTable.hsql.sql"/>
+			<fileset file="../dbdeploy-dist/src/main/scripts/createSchemaVersionTable.hsql.sql"/>
 		</sql>
 	</target>
 
